@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/vagrant/provision/system/set-gnome-settings.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Apply Gnome Settings
+Comment=Apply Gnome Settings at next restart

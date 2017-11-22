@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
 
 sudo apt-get install -y maven
-sudo apt-get install -y eclipse-jdt
 
-# Install Eclipse Plugins
-#   - Maven Integration for Eclipse (m2e)
-eclipse -clean -purgeHistory \
-    -application org.eclipse.equinox.p2.director \
-    -noSplash \
-    -repository http://download.eclipse.org/releases/indigo/ \
-    -installIUs \
-        org.eclipse.m2e.feature.feature.group
+sudo add-apt-repository ppa:mmk2410/eclipse-ide-java
+sudo apt-get update
+
+sudo apt-get install -y eclipse-ide-java
+
